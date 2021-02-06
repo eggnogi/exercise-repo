@@ -1,0 +1,24 @@
+We have:
+
+$$F(u,v)=\int_0^v\frac{1-cos(ut)}{t} dt $$
+
+Find $$F_u$$ and $$F_v$$ 
+
+
+which is: 
+ 
+$$ F_u=\int_0^v \frac{\partial}{\partial u} \frac{-cos(ut)}{t}dt = \int_0^v sin(ut) dt = \frac{-cos(uv)}{u}-\frac{(-cos(0)}{u}=\frac{1-cos(uv)}{u}$$
+
+$$ F_v = \frac{1-cos(uv)}{v} $$
+
+But how do can you use this to solve:
+
+$$\frac{d}{dx}\int_0^{x^2} \frac{1-cos(xt)}{t}dt $$
+
+Obviously $$ u=x$$ and $$v=x^2$$
+
+By Leibniz rule we have: 
+
+$$\frac{d}{dx}\int_0^{x^2} \frac{1-cos(xt)}{t}dt  = F_u + f(x^2)*v' =\frac{1-cosuv}{u}+\frac{1-cosuv}{v}*2x=3*\frac{1-cosx^3}{x}$$
+
+Feels like I have done something wrong, but is this correct? 
